@@ -19,3 +19,4 @@ Keep all files together and open `index.html` in a browser. No build step or pac
 - Project visuals are illustrative concepts, not claims of finished product screenshots.
 - No fabricated testimonials, metrics, live demos, or repository URLs are included.
 - The LinkedIn link and email are retained from the existing portfolio. The GitHub link points to this portfolio repository.
+\n\n## Site icon\n- `favicon.svg` is a custom EM monogram for Eman, using the portfolio's ink-and-lime palette.\n
