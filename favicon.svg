@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <title>Eman Mohamed Mosad monogram</title>
-  <rect width="64" height="64" rx="15" fill="#171816"/>
-  <path d="M15 17h22v7H23v6h12v7H23v6h14v7H15z" fill="#f8f8f5"/>
-  <path d="M39 17h7l6 9 6-9h1v33h-8V31l-5 7-5-7v20h-8V17z" fill="#d6ff55"/>
-  <circle cx="49" cy="10" r="4" fill="#d6ff55"/>
+  <title>Eman — EM monogram</title>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#171816"/>
+  <path d="M14 17h23v7H22v6h13v7H22v6h15v7H14z" fill="#f8f8f5"/>
+  <path d="M39 17h6l7 10 7-10h1v33h-8V31l-5 7-5-7v19h-8V17z" fill="#d6ff55"/>
+  <circle cx="50" cy="10" r="3" fill="#d6ff55"/>
 </svg>
