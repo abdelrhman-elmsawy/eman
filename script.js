@@ -1,23 +1,46 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector("#navLinks");
+(() => {
+  "use strict";
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-});
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector("#navLinks");
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-  });
-});
+  const setMenuOpen = (open) => {
+    if (!menuToggle || !navLinks) return;
+    navLinks.classList.toggle("open", open);
+    menuToggle.setAttribute("aria-expanded", String(open));
+  };
 
-document.getElementById("year").textContent = new Date().getFullYear();
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      setMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
+    });
 
-document.querySelectorAll(".placeholder-link").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    alert(`Before publishing, add your real ${link.dataset.label} profile URL in index.html.`);
-  });
-});
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setMenuOpen(false));
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        menuToggle.focus();
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        navLinks.classList.contains("open") &&
+        !navLinks.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
+        setMenuOpen(false);
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 700) setMenuOpen(false);
+    });
+  }
+
+  const year = document.getElementById("year");
+  if (year) year.textContent = String(new Date().getFullYear());
+})();
