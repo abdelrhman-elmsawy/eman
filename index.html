@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Eman Mohamed — Full Stack .NET Web Developer focused on building practical, user-centered web applications." />
+  <meta name="description" content="Eman Mohamed Mosad — Communications and Computer Engineering, software development, Full Stack .NET training, and engineering projects." />
+  <meta name="author" content="Eman Mohamed Mosad" />
+  <meta name="color-scheme" content="light" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Eman Mohamed Mosad | Software & Engineering Portfolio" />
+  <meta property="og:description" content="Explore Eman's software development, embedded systems, signal processing, and engineering projects." />
+  <meta property="og:image" content="profile.png" />
   <meta name="theme-color" content="#f7efe4" />
-  <title>Eman Mohamed | Full Stack .NET Developer</title>
+  <title>Eman Mohamed Mosad | Software &amp; Engineering Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,8 +22,8 @@
   <div class="ambient ambient-two"></div>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Eman Mohamed home"><span class="brand-mark">EM</span><span>Eman Mohamed<span class="brand-subtitle">Full Stack .NET Developer</span></span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav-links" id="navLinks">
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#technical-skills">Technical Skills</a>
@@ -25,27 +31,26 @@
       <a href="#projects">Projects</a>
       <a href="#journey">Journey</a>
       <a href="#education">Education</a>
-      <a href="#testimonials">Testimonials</a>
       <a class="nav-cta" href="#contact">Let’s connect <span>↗</span></a>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero section-wrap" id="home">
       <div class="hero-copy">
         <div class="eyebrow"><span class="status-dot"></span> WELCOME TO MY PORTFOLIO</div>
         <h1>Hi, I’m<br><span class="hero-name">Eman Mohamed</span></h1>
-        <h2 class="hero-role">Full Stack .NET Web Developer</h2>
-        <p class="hero-intro">I build modern, scalable, and user-focused web applications with a passion for turning ideas into practical solutions.</p>
+        <h2 class="hero-role">Software Development · Full Stack .NET</h2>
+        <p class="hero-intro">I combine software development with an engineering mindset, building practical web applications and exploring embedded systems, databases, and digital signal processing through hands-on projects.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">View My Projects <span>↗</span></a>
           <a class="button button-secondary" href="Eman_Mohamed_Mosad_CV.pdf" download>Download CV <span>↓</span></a>
         </div>
-        <div class="hero-socials"><a href="#contact" aria-label="Contact">✉</a><a href="#projects" aria-label="Projects">⌘</a><a href="#skills" aria-label="Skills">&lt;/&gt;</a></div>
+        <div class="hero-socials"><a href="mailto:emanmohamedmosad21@gmail.com" aria-label="Email Eman">✉</a><a href="https://www.linkedin.com/in/eman-matboly321a60343" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">in</a><a href="mailto:emanmohamedmosad21@gmail.com?subject=GitHub%20profile%20request" aria-label="Ask for GitHub profile">GH</a></div>
       </div>
       <div class="hero-visual portrait-visual" aria-label="Eman Mohamed profile portrait">
         <div class="portrait-halo"></div>
-        <div class="portrait-frame"><img src="profile.png" alt="Eman Mohamed" class="profile-photo"></div>
+        <div class="portrait-frame"><img src="profile.png" alt="Portrait of Eman Mohamed Mosad" class="profile-photo" width="350" height="430" fetchpriority="high" decoding="async"></div>
         <div class="tech-badge badge-csharp">C#</div>
         <div class="tech-badge badge-dotnet">.NET</div>
         <div class="tech-badge badge-code">&lt;/&gt;</div>
@@ -66,8 +71,8 @@
       <div class="about-grid">
         <p class="about-lead">Before writing code, I want to understand the problem, the people using the product, and what a successful result should look like.</p>
         <div class="about-body">
-          <p>I enjoy connecting logical problem-solving with practical implementation. My current development path focuses on C#, .NET web development, front-end fundamentals, and building applications that are clear, maintainable, and useful.</p>
-          <p>I value clear communication, organized work, and steady improvement. Whether I’m working on a feature or collaborating with a team, I aim to make each step intentional and each detail count.</p>
+          <p>I enjoy connecting logical problem-solving with practical implementation. My current focus includes C# and .NET web development alongside programming fundamentals, database design, embedded systems, and signal processing.</p>
+          <p>I value clear communication, structured problem-solving, and collaboration. Through academic work and DEPI training, I keep strengthening my implementation skills and learning how to turn requirements into useful solutions.</p>
           <div class="values-row"><span>01&nbsp; Understand the need</span><span>02&nbsp; Build with purpose</span><span>03&nbsp; Improve through feedback</span></div>
         </div>
       </div>
@@ -81,7 +86,7 @@
         <article class="skill-card"><div class="skill-top"><span class="skill-symbol green">▤</span><span class="skill-category">DATA</span></div><h3>Databases</h3><p>Working with data as part of connected application workflows.</p><div class="skill-tags"><span>Database concepts</span><span>CRUD workflows</span></div></article>
         <article class="skill-card"><div class="skill-top"><span class="skill-symbol purple">↗</span><span class="skill-category">WORKFLOW</span></div><h3>Development Practice</h3><p>Breaking requirements into manageable tasks and improving solutions through feedback.</p><div class="skill-tags"><span>Problem solving</span><span>Teamwork</span><span>Iteration</span></div></article>
       </div>
-      <p class="skills-note">This toolkit reflects my current development focus. I keep expanding it through hands-on practice and project work.</p>
+      <p class="skills-note">Skills reflect the CV, current DEPI Full Stack .NET training, and tools identified in the listed academic projects. Proficiency varies by technology.</p>
     </section>
 
 
@@ -100,7 +105,7 @@
       <div class="tech-logo-strip" aria-label="Technologies and tools">
         <span class="tech-logo-heading">TECH I WORK WITH</span>
         <div class="tech-logo-list">
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/csharp/70472B" alt="C sharp logo"><span>C#</span></div>
+          <div class="tech-logo-item"><img loading="lazy" decoding="async" src="https://cdn.simpleicons.org/csharp/70472B" alt="C sharp logo"><span>C#</span></div>
           <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/dotnet/70472B" alt=".NET logo"><span>.NET</span></div>
           <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/html5/70472B" alt="HTML5 logo"><span>HTML5</span></div>
           <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/css3/70472B" alt="CSS3 logo"><span>CSS3</span></div>
@@ -156,7 +161,7 @@
           <div class="portfolio-project-content"><div class="project-kicker">BIOMEDICAL ENGINEERING · MONITORING</div><h3>Eye Hydration &amp; Stress Monitoring</h3><p>A prototype concept exploring blink-rate signals as one input for a non-invasive monitoring system.</p><ul><li>Sensor-based monitoring concept</li><li>Signal acquisition and interpretation</li><li>Translating a health-related need into a technical idea</li></ul><div class="project-tags"><span>Sensors</span><span>Embedded Systems</span><span>Prototyping</span></div><span class="project-status"><i></i> Academic concept</span></div>
         </article>
       </div>
-      <p class="project-disclaimer">Project descriptions reflect academic work and design scope; live demos and screenshots can be added when available.</p>
+      <p class="project-disclaimer">Project descriptions reflect the CV and available project scope. Add verified screenshots, repository links, and live demonstrations as they become available.</p>
     </section>
 
     <section class="section-wrap journey-section" id="journey">
@@ -192,21 +197,36 @@
       </div>
     </section>
 
-    <section class="section-wrap testimonials-section" id="testimonials">
+    <section class="section-wrap profile-details-section" id="activities">
       <div class="section-heading heading-with-note">
-        <div><span class="section-index">08 / TESTIMONIALS</span><h2>Trust is built<br><span class="gradient-text">through the work.</span></h2></div>
-        <p>Good collaboration depends on communication, reliability, and respect for the project brief.</p>
+        <div><span class="section-index">08 / ACTIVITIES &amp; LANGUAGES</span><h2>Beyond code,<br><span class="gradient-text">working with people.</span></h2></div>
+        <p>Creative collaboration and campus activities complement my technical background.</p>
       </div>
-      <div class="testimonials-panel">
-        <div class="testimonial-mark">“</div>
-        <div><h3>Verified feedback belongs here.</h3><p>This section is ready for genuine comments from clients, teammates, or collaborators as they become available. No testimonials have been invented or attributed to anyone.</p><span class="testimonial-status"><i></i> Awaiting real project feedback</span></div>
+      <div class="profile-details-grid">
+        <article class="profile-detail-card">
+          <span class="profile-detail-kicker">LEADERSHIP &amp; ACTIVITIES</span>
+          <h3>Graphic Designer &amp; Media Member</h3>
+          <p class="profile-detail-org">Students for Egypt Family · Mansoura University Cultural Committee · 2023–Present</p>
+          <ul>
+            <li>Produced 10+ promotional assets for university events and campaigns.</li>
+            <li>Supported recruitment interviews and onboarding of new volunteers.</li>
+            <li>Participated in cultural, educational, technical, and student-union activities.</li>
+          </ul>
+        </article>
+        <article class="profile-detail-card">
+          <span class="profile-detail-kicker">LANGUAGES</span>
+          <h3>Communication</h3>
+          <div class="language-row"><span>Arabic</span><strong>Native</strong></div>
+          <div class="language-row"><span>English</span><strong>B2 · Upper Intermediate</strong></div>
+          <p class="profile-detail-org">English level listed as B2, British Council certified, in the CV.</p>
+        </article>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
       <div class="section-wrap contact-inner">
         <div><span class="section-index">09 / CONTACT</span><h2>Have an idea?<br><span class="gradient-text">Let’s make it useful.</span></h2><p>I’m open to connecting, collaborating, and discussing meaningful web development projects.</p></div>
-        <div class="contact-panel"><span class="contact-panel-label">LET’S CONNECT</span><p>Choose a channel and add your professional links to make it easy for people to reach you.</p><div class="contact-links"><a href="#" class="contact-link placeholder-link" data-label="LinkedIn">LinkedIn <span>↗</span></a><a href="#" class="contact-link placeholder-link" data-label="GitHub">GitHub <span>↗</span></a><a href="mailto:emanmohamedmosad21@gmail.com" class="contact-link email-link">Email <span>↗</span></a></div><small class="edit-note">LinkedIn and GitHub profile links can be connected before publishing.</small></div>
+        <div class="contact-panel"><span class="contact-panel-label">LET’S CONNECT</span><p>For professional enquiries, collaboration, or project discussions, use one of the direct links below.</p><div class="contact-links"><a href="https://www.linkedin.com/in/eman-matboly321a60343" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn <span>↗</span></a><a href="mailto:emanmohamedmosad21@gmail.com?subject=Portfolio%20enquiry" class="contact-link">GitHub <span>↗</span></a><a href="mailto:emanmohamedmosad21@gmail.com" class="contact-link email-link">Email <span>↗</span></a></div></div>
       </div>
     </section>
   </main>
