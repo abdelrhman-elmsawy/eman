@@ -361,3 +361,86 @@ section:not(.hero) { padding:78px 0; }
 .education-brand-logo small{font:700 8px/1.35 var(--display);letter-spacing:.65px}
 .depi-logo .depi-mark{min-width:54px;background:#a97851;font-size:12px;letter-spacing:.5px}
 @media(max-width:650px){.tech-logo-strip{padding:17px}.tech-logo-list{gap:7px}.tech-logo-item{padding:8px 9px;font-size:10px}.education-brand-logo{gap:8px}.education-card-top{align-items:flex-start}}
+
+
+/* Accessibility, consistency, and profile details — portfolio improvements */
+:root {
+  --color-bg: #f7efe4;
+  --color-surface: #fffaf3;
+  --color-text: #382316;
+  --color-muted: #78695e;
+  --color-primary: #4b2f1d;
+  --color-border: rgba(112, 73, 43, .16);
+  --focus-ring: #81512f;
+}
+html { scroll-padding-top: 24px; }
+body { color: var(--color-text); }
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+button { font: inherit; }
+.profile-details-section { border-top: 1px solid var(--color-border); }
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.profile-detail-card {
+  padding: 26px;
+  border: 1px solid var(--color-border);
+  border-radius: 17px;
+  background: linear-gradient(145deg, #fffaf3, #f3e5d5);
+  box-shadow: 0 10px 28px rgba(86, 53, 29, .045);
+}
+.profile-detail-kicker {
+  display: block;
+  margin-bottom: 12px;
+  color: #a97851;
+  font: 700 9px var(--display);
+  letter-spacing: 1.1px;
+}
+.profile-detail-card h3 {
+  margin: 0 0 8px;
+  color: #4b2f1d;
+  font: 600 19px/1.4 var(--display);
+}
+.profile-detail-org {
+  color: #78695e;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.profile-detail-card ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: #6f5a49;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.profile-detail-card li::marker { color: #a97851; }
+.language-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--color-border);
+  color: #6f5a49;
+  font-size: 13px;
+}
+.language-row strong { color: #4b2f1d; font-size: 12px; text-align: right; }
+.profile-detail-card > p:last-child { margin: 14px 0 0; }
+@media (max-width: 650px) {
+  .profile-details-grid { grid-template-columns: 1fr; }
+  .profile-detail-card { padding: 21px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
