@@ -1,216 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Eman Mohamed — Full Stack .NET Web Developer focused on building practical, user-centered web applications." />
-  <meta name="theme-color" content="#f7efe4" />
-  <title>Eman Mohamed | Full Stack .NET Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eman Mohamed Mosad — Communications and Computer Engineering, Full Stack .NET training, and software and engineering projects.">
+  <meta name="author" content="Eman Mohamed Mosad">
+  <meta name="theme-color" content="#f8f8f5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Eman Mohamed Mosad — Portfolio">
+  <meta property="og:description" content="Software development and engineering projects by Eman Mohamed Mosad.">
+  <meta property="og:image" content="profile.png">
+  <title>Eman Mohamed Mosad — Software &amp; Engineering Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Eman Mohamed home"><span class="brand-mark">EM</span><span>Eman Mohamed<span class="brand-subtitle">Full Stack .NET Developer</span></span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#technical-skills">Technical Skills</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#journey">Journey</a>
-      <a href="#education">Education</a>
-      <a href="#testimonials">Testimonials</a>
-      <a class="nav-cta" href="#contact">Let’s connect <span>↗</span></a>
+    <a class="wordmark" href="#home" aria-label="Eman Mohamed Mosad, home">eman<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#journey">Journey</a>
+      <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> WELCOME TO MY PORTFOLIO</div>
-        <h1>Hi, I’m<br><span class="hero-name">Eman Mohamed</span></h1>
-        <h2 class="hero-role">Full Stack .NET Web Developer</h2>
-        <p class="hero-intro">I build modern, scalable, and user-focused web applications with a passion for turning ideas into practical solutions.</p>
+  <main id="main">
+    <section class="hero page-grid" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> SOFTWARE · ENGINEERING · DESIGN</p>
+        <h1 id="hero-title">Thoughtful ideas.<br><span>Useful things.</span></h1>
+        <p class="hero-intro">I’m Eman Mohamed Mosad — a Communications and Computer Engineering professional-in-training exploring software development, embedded systems, and practical problem-solving.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">View My Projects <span>↗</span></a>
-          <a class="button button-secondary" href="Eman_Mohamed_Mosad_CV.pdf" download>Download CV <span>↓</span></a>
+          <a class="button button-dark" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="Eman_Mohamed_Mosad_CV.pdf" target="_blank" rel="noopener">View CV <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="hero-socials"><a href="#contact" aria-label="Contact">✉</a><a href="#projects" aria-label="Projects">⌘</a><a href="#skills" aria-label="Skills">&lt;/&gt;</a></div>
+        <div class="hero-meta"><span><i class="live-dot"></i> Full Stack .NET training · DEPI</span><span>Based in Egypt</span></div>
       </div>
-      <div class="hero-visual portrait-visual" aria-label="Eman Mohamed profile portrait">
-        <div class="portrait-halo"></div>
-        <div class="portrait-frame"><img src="profile.png" alt="Eman Mohamed" class="profile-photo"></div>
-        <div class="tech-badge badge-csharp">C#</div>
-        <div class="tech-badge badge-dotnet">.NET</div>
-        <div class="tech-badge badge-code">&lt;/&gt;</div>
-        <div class="portrait-note">Turning ideas into<br><strong>real solutions</strong> ↙</div>
-        <div class="portrait-caption"><span class="caption-dot"></span> Building with purpose</div>
+      <div class="hero-image-wrap reveal reveal-delay">
+        <div class="image-index">PORTFOLIO / 2026</div>
+        <div class="portrait-frame"><img src="profile.png" alt="Portrait of Eman Mohamed Mosad" width="540" height="660" fetchpriority="high"></div>
+        <div class="portrait-caption"><span>EM</span><span>Curiosity meets implementation.</span></div>
+        <div class="accent-stamp" aria-hidden="true">E<span>.</span></div>
       </div>
+      <a class="scroll-cue" href="#work"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
     </section>
 
-    <div class="section-wrap highlight-ribbon" aria-label="Portfolio highlights">
-      <div><span class="ribbon-icon">▣</span><span><b>Web Development</b><small>Modern &amp; Responsive</small></span></div>
-      <div><span class="ribbon-icon">⚙</span><span><b>Full Stack .NET</b><small>End-to-End Solutions</small></span></div>
-      <div><span class="ribbon-icon">▤</span><span><b>Clean &amp; Scalable Code</b><small>Best Practices</small></span></div>
-      <div><span class="ribbon-icon">♧</span><span><b>Real Projects</b><small>Practical &amp; Impactful</small></span></div>
-    </div>
+    <section class="intro-band">
+      <p>AN ENGINEERING MINDSET, A CREATIVE EYE, AND A PRACTICAL APPROACH TO BUILDING.</p>
+      <span aria-hidden="true">✳</span>
+    </section>
 
-    <section class="section-wrap about-section" id="about">
-      <div class="section-heading"><span class="section-index">01 / ABOUT</span><h2>Good software starts<br>with <span class="gradient-text">understanding.</span></h2></div>
-      <div class="about-grid">
-        <p class="about-lead">Before writing code, I want to understand the problem, the people using the product, and what a successful result should look like.</p>
-        <div class="about-body">
-          <p>I enjoy connecting logical problem-solving with practical implementation. My current development path focuses on C#, .NET web development, front-end fundamentals, and building applications that are clear, maintainable, and useful.</p>
-          <p>I value clear communication, organized work, and steady improvement. Whether I’m working on a feature or collaborating with a team, I aim to make each step intentional and each detail count.</p>
-          <div class="values-row"><span>01&nbsp; Understand the need</span><span>02&nbsp; Build with purpose</span><span>03&nbsp; Improve through feedback</span></div>
+    <section class="section page-grid work-section" id="work" aria-labelledby="work-title">
+      <div class="section-aside reveal"><span class="section-number">01 / SELECTED WORK</span><p>Projects that connect software, systems, and real-world needs.</p></div>
+      <div class="section-main">
+        <div class="section-heading reveal"><h2 id="work-title">A few things<br>I've <em>worked on.</em></h2><p>Academic and practical projects exploring web systems, signal processing, and embedded technology.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-wide reveal">
+            <div class="project-visual visual-pharmacy">
+              <div class="visual-topline"><span>PROJECT 01</span><span>SOFTWARE / WEB</span></div>
+              <div class="browser-window"><div class="browser-bar"><i></i><i></i><i></i><span>Pharmacy Management</span></div><div class="browser-content"><aside><b>Rx</b><i></i><i></i><i></i></aside><div class="dashboard"><small>MANAGEMENT SYSTEM</small><strong>Daily overview</strong><div class="dashboard-cards"><span>Inventory <b>↗</b></span><span>Prescriptions <b>＋</b></span><span>Accounts <b>◎</b></span></div><div class="dashboard-lines"><i></i><i></i><i></i></div></div></div></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">SYSTEM ANALYSIS · WEB DEVELOPMENT</p><h3>Pharmacy Management Website</h3><p>A system-design project focused on organizing pharmacy workflows, including inventory, prescriptions, authentication scope, and supporting software diagrams.</p><div class="tag-list"><span>SQL</span><span>System Analysis</span><span>UML / ERD</span></div></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual visual-parking">
+              <div class="visual-topline"><span>PROJECT 02</span><span>EMBEDDED</span></div>
+              <div class="parking-layout"><div class="vip-sign">P<small>VIP</small></div><div class="parking-slots"><i></i><i></i><i></i><b>VIP ZONE</b></div><div class="parking-car">▰</div></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">ARDUINO · SYSTEM LOGIC</p><h3>Smart Parking with VIP Zone</h3><p>An academic concept for organizing parking flow and reserved-zone access.</p><div class="tag-list"><span>Arduino</span><span>Embedded C</span><span>Electronics</span></div></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual visual-audio">
+              <div class="visual-topline"><span>PROJECT 03</span><span>SIGNAL PROCESSING</span></div>
+              <div class="audio-panel"><span>AUDIO / SIGNAL STUDY</span><div class="waveform"><i style="--bar:19px"></i><i style="--bar:36px"></i><i style="--bar:53px"></i><i style="--bar:12px"></i><i style="--bar:29px"></i><i style="--bar:46px"></i><i style="--bar:63px"></i><i style="--bar:22px"></i><i style="--bar:39px"></i><i style="--bar:56px"></i><i style="--bar:15px"></i><i style="--bar:32px"></i><i style="--bar:49px"></i><i style="--bar:66px"></i><i style="--bar:25px"></i><i style="--bar:42px"></i><i style="--bar:59px"></i><i style="--bar:18px"></i><i style="--bar:35px"></i><i style="--bar:52px"></i><i style="--bar:69px"></i><i style="--bar:28px"></i><i style="--bar:45px"></i><i style="--bar:62px"></i><i style="--bar:21px"></i><i style="--bar:38px"></i><i style="--bar:55px"></i><i style="--bar:14px"></i><i style="--bar:31px"></i><i style="--bar:48px"></i></div><small>INPUT → FILTER → OUTPUT</small></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">DIGITAL SIGNAL PROCESSING</p><h3>Audio Processing System</h3><p>An engineering project exploring audio signals, filtering, and time- and frequency-domain concepts.</p><div class="tag-list"><span>Python</span><span>MATLAB</span><span>DSP</span></div></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual visual-car">
+              <div class="visual-topline"><span>PROJECT 04</span><span>ROBOTICS</span></div>
+              <div class="car-stage"><span class="sensor-chip">ULTRASONIC SENSOR</span><div class="robot-car"><i></i><b></b><i></i></div><div class="sensor-wave"><i></i><i></i><i></i></div><small>SENSE / THINK / MOVE</small></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">ARDUINO · SENSOR INTEGRATION</p><h3>Arduino Smart Car</h3><p>A microcontroller-based car concept using sensor inputs to support environmental awareness and movement logic.</p><div class="tag-list"><span>Arduino IDE</span><span>Embedded C</span><span>Sensors</span></div></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual visual-eye">
+              <div class="visual-topline"><span>PROJECT 05</span><span>PROTOTYPE CONCEPT</span></div>
+              <div class="eye-panel"><div class="eye-symbol"><i></i></div><div class="eye-readout"><span>BLINK RATE</span><b>Monitoring concept</b><i></i><i></i><i></i></div></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">SENSORS · MONITORING CONCEPT</p><h3>Eye Hydration &amp; Stress Monitoring</h3><p>A prototype concept exploring blink-rate signals as one possible input for a non-invasive monitoring system. Not a diagnostic tool.</p><div class="tag-list"><span>Sensors</span><span>Embedded Systems</span><span>Prototyping</span></div></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
         </div>
+        <p class="project-note">Visuals are illustrative representations of project concepts, not screenshots of completed products. Add verified demos and repository links when available.</p>
       </div>
     </section>
 
-    <section class="section-wrap skills-section" id="skills">
-      <div class="section-heading"><span class="section-index">02 / TOOLKIT</span><h2>Tools I’m building<br>with <span class="gradient-text">every day.</span></h2></div>
-      <div class="skills-grid">
-        <article class="skill-card featured-skill"><div class="skill-top"><span class="skill-symbol">C#</span><span class="skill-category">BACK END</span></div><h3>C# & .NET</h3><p>Core programming concepts and the foundations of .NET web application development.</p><div class="skill-tags"><span>C#</span><span>.NET</span><span>Web API</span><span>MVC</span></div></article>
-        <article class="skill-card"><div class="skill-top"><span class="skill-symbol orange">&lt;/&gt;</span><span class="skill-category">FRONT END</span></div><h3>Web Fundamentals</h3><p>Building structured, responsive interfaces with modern web essentials.</p><div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></article>
-        <article class="skill-card"><div class="skill-top"><span class="skill-symbol green">▤</span><span class="skill-category">DATA</span></div><h3>Databases</h3><p>Working with data as part of connected application workflows.</p><div class="skill-tags"><span>Database concepts</span><span>CRUD workflows</span></div></article>
-        <article class="skill-card"><div class="skill-top"><span class="skill-symbol purple">↗</span><span class="skill-category">WORKFLOW</span></div><h3>Development Practice</h3><p>Breaking requirements into manageable tasks and improving solutions through feedback.</p><div class="skill-tags"><span>Problem solving</span><span>Teamwork</span><span>Iteration</span></div></article>
-      </div>
-      <p class="skills-note">This toolkit reflects my current development focus. I keep expanding it through hands-on practice and project work.</p>
-    </section>
-
-
-    <section class="section-wrap technical-skills-section" id="technical-skills">
-      <div class="section-heading heading-with-note">
-        <div><span class="section-index">03 / TECHNICAL SKILLS</span><h2>My technical<br><span class="gradient-text">toolbox.</span></h2></div>
-        <p>A practical overview of the languages, web technologies, data concepts, and engineering tools I use or continue to develop through training and projects.</p>
-      </div>
-      <div class="technical-skills-grid">
-        <article class="technical-skill-card"><div class="technical-skill-icon">&lt;/&gt;</div><h3>Programming Languages</h3><p>Programming foundations and problem-solving.</p><div class="technical-skill-tags"><span>C#</span><span>Python</span><span>Java</span><span>C</span><span>C++</span></div></article>
-        <article class="technical-skill-card"><div class="technical-skill-icon">⌘</div><h3>Web Development</h3><p>Building structured interfaces and learning full-stack patterns.</p><div class="technical-skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>.NET</span><span>MVC</span><span>Web API</span></div></article>
-        <article class="technical-skill-card"><div class="technical-skill-icon">▤</div><h3>Databases &amp; Design</h3><p>Working with relational data and software design documentation.</p><div class="technical-skill-tags"><span>SQL</span><span>MySQL</span><span>ER Diagrams</span><span>UML</span><span>SDLC</span></div></article>
-        <article class="technical-skill-card"><div class="technical-skill-icon">⚙</div><h3>Embedded Systems</h3><p>Connecting software logic with hardware and sensor inputs.</p><div class="technical-skill-tags"><span>Arduino IDE</span><span>Embedded C</span><span>Sensor Integration</span><span>Proteus</span></div></article>
-        <article class="technical-skill-card"><div class="technical-skill-icon">✦</div><h3>Design &amp; Development Tools</h3><p>Tools for coding, prototyping, and preparing visual content.</p><div class="technical-skill-tags"><span>VS Code</span><span>Git &amp; GitHub</span><span>Photoshop</span><span>Illustrator</span><span>Canva</span></div></article>
-      </div>
-      <div class="tech-logo-strip" aria-label="Technologies and tools">
-        <span class="tech-logo-heading">TECH I WORK WITH</span>
-        <div class="tech-logo-list">
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/csharp/70472B" alt="C sharp logo"><span>C#</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/dotnet/70472B" alt=".NET logo"><span>.NET</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/html5/70472B" alt="HTML5 logo"><span>HTML5</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/css3/70472B" alt="CSS3 logo"><span>CSS3</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/javascript/70472B" alt="JavaScript logo"><span>JavaScript</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/python/70472B" alt="Python logo"><span>Python</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/mysql/70472B" alt="MySQL logo"><span>MySQL</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/git/70472B" alt="Git logo"><span>Git</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/github/70472B" alt="GitHub logo"><span>GitHub</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/visualstudiocode/70472B" alt="Visual Studio Code logo"><span>VS Code</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/arduino/70472B" alt="Arduino logo"><span>Arduino</span></div>
-          <div class="tech-logo-item"><img src="https://cdn.simpleicons.org/canva/70472B" alt="Canva logo"><span>Canva</span></div>
+    <section class="about-section" id="about">
+      <div class="page-grid section">
+        <div class="section-aside reveal"><span class="section-number">02 / A LITTLE ABOUT ME</span><p>Good work begins with understanding the problem.</p></div>
+        <div class="section-main about-main">
+          <div class="section-heading reveal"><h2>Curious by nature.<br><em>Practical by design.</em></h2></div>
+          <div class="about-columns reveal"><p>I enjoy connecting logical problem-solving with thoughtful implementation. My current development focus is Full Stack .NET, alongside programming foundations, database design, embedded systems, and signal processing.</p><p>I value clear communication, structured work, and collaboration. Through training and project work, I keep strengthening my skills and learning how to turn requirements into useful solutions.</p></div>
+          <div class="principles"><div><span>01</span><b>Understand</b><small>Start with the real need.</small></div><div><span>02</span><b>Build</b><small>Keep solutions clear and useful.</small></div><div><span>03</span><b>Improve</b><small>Learn through feedback.</small></div></div>
         </div>
       </div>
-      <p class="technical-skills-note">Skills are presented as a working toolkit, not as a claim of expert-level proficiency in every technology.</p>
     </section>
 
-    <section class="section-wrap services-section" id="services">
-      <div class="section-heading heading-with-note">
-        <div><span class="section-index">04 / SERVICES</span><h2>Practical support for<br><span class="gradient-text">your next idea.</span></h2></div>
-        <p>Clear scope, thoughtful implementation, and communication throughout the work—so you know what is being delivered.</p>
-      </div>
-      <div class="services-grid">
-        <article class="service-card"><span class="service-icon">&lt;/&gt;</span><div class="service-label">01 · WEB</div><h3>Responsive Web Pages</h3><p>Building and improving clean, responsive pages with a focus on structure, usability, and a consistent visual style.</p><div class="service-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
-        <article class="service-card"><span class="service-icon">⚙</span><div class="service-label">02 · .NET</div><h3>Web Application Development</h3><p>Support with .NET learning projects and application features, based on an agreed scope and the requirements provided.</p><div class="service-tags"><span>C#</span><span>.NET</span><span>MVC / Web API</span></div></article>
-        <article class="service-card"><span class="service-icon">▤</span><div class="service-label">03 · DATA</div><h3>Database &amp; SQL Tasks</h3><p>Organizing relational data, drafting SQL queries, and helping structure database workflows for small applications.</p><div class="service-tags"><span>SQL</span><span>Data modeling</span></div></article>
-        <article class="service-card"><span class="service-icon">◇</span><div class="service-label">04 · ANALYSIS</div><h3>Software Documentation</h3><p>Turning project requirements into organized software-engineering documentation and system diagrams.</p><div class="service-tags"><span>Requirements</span><span>UML</span><span>ER diagrams</span></div></article>
-        <article class="service-card"><span class="service-icon">✦</span><div class="service-label">05 · VISUALS</div><h3>Graphic Design &amp; Visual Content</h3><p>Creating clean visual assets for digital content, with attention to layout, typography, and a consistent visual identity.</p><div class="service-tags"><span>Social Media</span><span>Visual Layout</span><span>Brand Consistency</span></div></article>
-      </div>
-      <p class="services-note">Every project starts with a quick discussion of the goal, deliverables, timeline, and any existing files or designs. Services are offered within the agreed scope and current capabilities.</p>
-    </section>
-
-    <section class="section-wrap projects-section" id="projects">
-      <div class="section-heading heading-with-note"><div><span class="section-index">05 / SELECTED WORK</span><h2>Projects with a<br><span class="gradient-text">real purpose.</span></h2></div><p>A selection of academic and practical projects that reflect my interest in web development, software design, and engineering problem-solving.</p></div>
-      <div class="portfolio-project-grid">
-        <article class="portfolio-project pharmacy-project">
-          <div class="portfolio-project-art"><span class="project-number">01</span><div class="pharmacy-window"><div class="mock-window-bar"><i></i><i></i><i></i><span>Pharmacy Management</span></div><div class="pharmacy-mock-body"><div class="pharmacy-side"><b>Rx</b><span></span><span></span><span></span></div><div class="pharmacy-dashboard"><small>PHARMACY SYSTEM</small><strong>Management Dashboard</strong><div class="pharmacy-metrics"><span><b>▦</b> Inventory</span><span><b>＋</b> Prescriptions</span><span><b>◉</b> Accounts</span></div><div class="mock-lines"><i></i><i></i><i></i></div></div></div></div><span class="art-label">WEB / SYSTEM DESIGN</span></div>
-          <div class="portfolio-project-content"><div class="project-kicker">SOFTWARE ENGINEERING · WEB DEVELOPMENT</div><h3>Pharmacy Management Website</h3><p>A pharmacy system project focused on organizing core workflows and translating requirements into a clear system design.</p><ul><li>Inventory and prescription management modules</li><li>User authentication as part of the system scope</li><li>Use-case, ER, class, and sequence diagrams</li></ul><div class="project-tags"><span>Web Development</span><span>SQL</span><span>System Analysis</span><span>UML</span></div><span class="project-status"><i></i> Academic project</span></div>
-        </article>
-        <article class="portfolio-project parking-project">
-          <div class="portfolio-project-art"><span class="project-number">02</span><div class="parking-illustration"><div class="parking-sign">P<span>VIP</span></div><div class="parking-lane"><i></i><i></i><i></i><b>VIP</b></div><div class="parking-car">▰</div></div><span class="art-label">EMBEDDED SYSTEMS</span></div>
-          <div class="portfolio-project-content"><div class="project-kicker">ARDUINO · SYSTEM LOGIC</div><h3>Smart Parking with VIP Zone</h3><p>An academic project exploring a more organized parking flow with a dedicated VIP area and a distinction between standard and reserved access.</p><ul><li>Parking workflow and system logic</li><li>VIP-zone concept and access prioritization</li><li>Hardware/software system planning</li></ul><div class="project-tags"><span>Arduino</span><span>Embedded C</span><span>Electronics</span></div><span class="project-status"><i></i> Academic project</span></div>
-        </article>
-        <article class="portfolio-project dsp-project">
-          <div class="portfolio-project-art"><span class="project-number">03</span><div class="wave-art"><span>DSP / AUDIO</span><div class="wave-bars"><i style="--h:18px"></i><i style="--h:35px"></i><i style="--h:24px"></i><i style="--h:52px"></i><i style="--h:31px"></i><i style="--h:65px"></i><i style="--h:42px"></i><i style="--h:28px"></i><i style="--h:58px"></i><i style="--h:75px"></i><i style="--h:45px"></i><i style="--h:25px"></i><i style="--h:49px"></i><i style="--h:66px"></i><i style="--h:32px"></i><i style="--h:56px"></i><i style="--h:38px"></i><i style="--h:21px"></i><i style="--h:44px"></i><i style="--h:60px"></i><i style="--h:29px"></i><i style="--h:48px"></i><i style="--h:34px"></i><i style="--h:18px"></i></div><div class="wave-caption">SIGNAL → FILTER → OUTPUT</div></div><span class="art-label">SIGNAL PROCESSING</span></div>
-          <div class="portfolio-project-content"><div class="project-kicker">PYTHON / MATLAB · DIGITAL SIGNAL PROCESSING</div><h3>Audio Processing System</h3><p>An engineering project centered on audio signals and digital signal-processing concepts.</p><ul><li>Audio filtering and signal analysis</li><li>Time- and frequency-domain concepts</li><li>Exploration of noise-reduction techniques</li></ul><div class="project-tags"><span>Python</span><span>MATLAB</span><span>DSP</span></div><span class="project-status"><i></i> Academic project</span></div>
-        </article>
-        <article class="portfolio-project smartcar-project">
-          <div class="portfolio-project-art"><span class="project-number">04</span><div class="car-scene"><div class="sensor-pill">ULTRASONIC</div><div class="smart-car"><i></i><b></b><i></i></div><div class="sensor-lines"><span></span><span></span><span></span></div><div class="car-scene-label">SENSE · THINK · MOVE</div></div><span class="art-label">ROBOTICS / HARDWARE</span></div>
-          <div class="portfolio-project-content"><div class="project-kicker">ARDUINO · SENSOR INTEGRATION</div><h3>Arduino Smart Car</h3><p>A hands-on embedded-systems project combining an Arduino-based vehicle concept with sensor inputs for environmental awareness.</p><ul><li>Ultrasonic distance sensing</li><li>Temperature and fire-sensor concepts</li><li>Microcontroller programming and testing</li></ul><div class="project-tags"><span>Arduino IDE</span><span>Embedded C</span><span>Sensors</span></div><span class="project-status"><i></i> Academic project</span></div>
-        </article>
-        <article class="portfolio-project hydration-project">
-          <div class="portfolio-project-art"><span class="project-number">05</span><div class="eye-scene"><div class="eye-graphic"><span></span></div><div class="eye-data"><small>BLINK RATE</small><strong>Monitoring concept</strong><i></i><i></i><i></i></div></div><span class="art-label">MONITORING CONCEPT</span></div>
-          <div class="portfolio-project-content"><div class="project-kicker">BIOMEDICAL ENGINEERING · MONITORING</div><h3>Eye Hydration &amp; Stress Monitoring</h3><p>A prototype concept exploring blink-rate signals as one input for a non-invasive monitoring system.</p><ul><li>Sensor-based monitoring concept</li><li>Signal acquisition and interpretation</li><li>Translating a health-related need into a technical idea</li></ul><div class="project-tags"><span>Sensors</span><span>Embedded Systems</span><span>Prototyping</span></div><span class="project-status"><i></i> Academic concept</span></div>
-        </article>
-      </div>
-      <p class="project-disclaimer">Project descriptions reflect academic work and design scope; live demos and screenshots can be added when available.</p>
-    </section>
-
-    <section class="section-wrap journey-section" id="journey">
-      <div class="section-heading"><span class="section-index">06 / JOURNEY</span><h2>Learning, building,<br><span class="gradient-text">moving forward.</span></h2></div>
-      <div class="journey-timeline">
-        <article class="journey-item current-item"><div class="journey-point"><span>01</span></div><div class="journey-item-card"><div class="journey-item-top"><span class="journey-date">2026 · IN PROGRESS</span><span class="journey-state">CURRENT FOCUS</span></div><h3>DEPI — Software Development, Full Stack .NET</h3><p class="journey-org">Digital Egypt Pioneers Initiative (DEPI) · Ministry of Communications and Information Technology (MCIT), Egypt</p><p class="journey-description">A national digital-skills initiative under Egypt’s Ministry of Communications and Information Technology. Developing practical skills in C# and .NET web development, including front-end fundamentals, MVC, Web API, and database-backed applications. Working with a team on a final project while continuing to strengthen implementation and collaboration skills.</p><div class="journey-tags"><span>C# / .NET</span><span>Web Development</span><span>Team Project</span></div></div></article>
-        <article class="journey-item"><div class="journey-point"><span>02</span></div><div class="journey-item-card"><div class="journey-item-top"><span class="journey-date">ONGOING</span><span class="journey-state">PRACTICE</span></div><h3>Personal &amp; Academic Projects</h3><p class="journey-org">Learning by building</p><p class="journey-description">Applying technical concepts through projects such as a Pharmacy Management Website, Smart Parking System with a VIP zone, Audio Processing System, Arduino Smart Car, and an eye-hydration and stress-monitoring concept.</p><div class="journey-tags"><span>System Design</span><span>Programming</span><span>Problem Solving</span></div></div></article>
-        <article class="journey-item"><div class="journey-point"><span>03</span></div><div class="journey-item-card"><div class="journey-item-top"><span class="journey-date">FOUNDATION</span><span class="journey-state">CONTINUOUS LEARNING</span></div><h3>Programming &amp; Engineering Fundamentals</h3><p class="journey-org">Building a broad technical foundation</p><p class="journey-description">Strengthening programming, software-engineering concepts, database fundamentals, and structured problem-solving, then connecting those foundations to practical applications and team-based work.</p><div class="journey-tags"><span>Python</span><span>SQL</span><span>Software Engineering</span></div></div></article>
+    <section class="section page-grid skills-section" id="skills">
+      <div class="section-aside reveal"><span class="section-number">03 / TOOLKIT</span><p>A working overview of technologies used in training and projects.</p></div>
+      <div class="section-main">
+        <div class="section-heading reveal"><h2>Tools for the<br><em>work in progress.</em></h2><p>Skill levels vary by technology; this list reflects the current learning and project toolkit, not expert proficiency in every area.</p></div>
+        <div class="skills-list reveal">
+          <div class="skill-row"><span class="skill-index">01</span><h3>Programming</h3><div class="skill-tags"><span>C#</span><span>Python</span><span>Java</span><span>C</span><span>C++</span></div></div>
+          <div class="skill-row"><span class="skill-index">02</span><h3>Web Development</h3><div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>.NET</span><span>MVC</span><span>Web API</span></div></div>
+          <div class="skill-row"><span class="skill-index">03</span><h3>Data &amp; Design</h3><div class="skill-tags"><span>SQL</span><span>MySQL</span><span>ER Diagrams</span><span>UML</span><span>SDLC</span></div></div>
+          <div class="skill-row"><span class="skill-index">04</span><h3>Embedded Systems</h3><div class="skill-tags"><span>Arduino IDE</span><span>Embedded C</span><span>Sensor Integration</span><span>Proteus</span></div></div>
+          <div class="skill-row"><span class="skill-index">05</span><h3>Tools &amp; Visuals</h3><div class="skill-tags"><span>VS Code</span><span>Git / GitHub</span><span>Photoshop</span><span>Illustrator</span><span>Canva</span></div></div>
+        </div>
       </div>
     </section>
 
-    <section class="section-wrap education-section" id="education">
-      <div class="section-heading heading-with-note">
-        <div><span class="section-index">07 / EDUCATION</span><h2>Education &amp;<br><span class="gradient-text">professional learning.</span></h2></div>
-        <p>The academic foundation and structured training that support my development journey.</p>
-      </div>
-      <div class="education-grid">
-        <article class="education-card education-primary">
-          <div class="education-card-top"><div class="education-brand-logo university-logo" aria-label="Mansoura University visual mark"><span>MU</span><small>MANSOURA<br>UNIVERSITY</small></div><span class="education-period">EXPECTED MAY 2028</span></div>
-          <p class="education-type">ACADEMIC EDUCATION</p>
-          <h3>B.Sc. in Communications &amp; Computer Engineering</h3>
-          <p class="education-organization">Mansoura University · Mansoura, Egypt</p>
-          <div class="education-meta"><span>GPA: 3.7 / 4.0</span><span>Engineering &amp; Computing</span></div>
-        </article>
-        <article class="education-card">
-          <div class="education-card-top"><div class="education-brand-logo depi-logo" aria-label="DEPI and MCIT visual mark"><span class="depi-mark">DEPI</span><small>MCIT · EGYPT</small></div><span class="education-period current-period">2026 · IN PROGRESS</span></div>
-          <p class="education-type">PROFESSIONAL TRAINING</p>
-          <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
-          <p class="education-organization">Full Stack .NET Web Developer Track</p>
-          <p class="education-description"><strong>DEPI</strong> stands for <em>Digital Egypt Pioneers Initiative</em>, a national digital-skills initiative under Egypt’s <strong>Ministry of Communications and Information Technology (MCIT)</strong>.</p>
-          <div class="education-meta"><span>C# &amp; .NET</span><span>Web Development</span><span>Team Project</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-wrap testimonials-section" id="testimonials">
-      <div class="section-heading heading-with-note">
-        <div><span class="section-index">08 / TESTIMONIALS</span><h2>Trust is built<br><span class="gradient-text">through the work.</span></h2></div>
-        <p>Good collaboration depends on communication, reliability, and respect for the project brief.</p>
-      </div>
-      <div class="testimonials-panel">
-        <div class="testimonial-mark">“</div>
-        <div><h3>Verified feedback belongs here.</h3><p>This section is ready for genuine comments from clients, teammates, or collaborators as they become available. No testimonials have been invented or attributed to anyone.</p><span class="testimonial-status"><i></i> Awaiting real project feedback</span></div>
+    <section class="journey-section" id="journey">
+      <div class="page-grid section">
+        <div class="section-aside reveal"><span class="section-number">04 / JOURNEY</span><p>Education, structured training, and collaborative work.</p></div>
+        <div class="section-main">
+          <div class="section-heading reveal"><h2>Learning that<br><em>keeps moving.</em></h2></div>
+          <div class="timeline">
+            <article class="timeline-item reveal"><span class="timeline-mark">01</span><div><div class="timeline-top"><span>2026 · IN PROGRESS</span><span class="timeline-pill">TRAINING</span></div><h3>Full Stack .NET Web Developer Track</h3><p class="timeline-org">Digital Egypt Pioneers Initiative (DEPI) · Ministry of Communications and Information Technology (MCIT), Egypt</p><p>Developing practical skills in C# and .NET web development, front-end fundamentals, MVC, Web API, and database-backed applications. Collaborating with a team on a final project.</p></div></article>
+            <article class="timeline-item reveal"><span class="timeline-mark">02</span><div><div class="timeline-top"><span>EXPECTED MAY 2028</span><span class="timeline-pill">EDUCATION</span></div><h3>B.Sc. in Communications &amp; Computer Engineering</h3><p class="timeline-org">Mansoura University · Mansoura, Egypt</p><p>GPA: 3.7 / 4.0. Building a foundation across communications, computing, programming, and engineering systems.</p></div></article>
+            <article class="timeline-item reveal"><span class="timeline-mark">03</span><div><div class="timeline-top"><span>2023–PRESENT</span><span class="timeline-pill">ACTIVITIES</span></div><h3>Graphic Design &amp; Media Activities</h3><p class="timeline-org">Students for Egypt Family · Mansoura University Cultural Committee</p><p>Created promotional materials for university activities and supported volunteer recruitment and onboarding.</p></div></article>
+          </div>
+          <div class="language-strip reveal"><span class="section-number">LANGUAGES</span><div><b>Arabic</b><span>Native</span></div><div><b>English</b><span>B2 · Upper Intermediate</span></div></div>
+        </div>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
-      <div class="section-wrap contact-inner">
-        <div><span class="section-index">09 / CONTACT</span><h2>Have an idea?<br><span class="gradient-text">Let’s make it useful.</span></h2><p>I’m open to connecting, collaborating, and discussing meaningful web development projects.</p></div>
-        <div class="contact-panel"><span class="contact-panel-label">LET’S CONNECT</span><p>Choose a channel and add your professional links to make it easy for people to reach you.</p><div class="contact-links"><a href="#" class="contact-link placeholder-link" data-label="LinkedIn">LinkedIn <span>↗</span></a><a href="#" class="contact-link placeholder-link" data-label="GitHub">GitHub <span>↗</span></a><a href="mailto:emanmohamedmosad21@gmail.com" class="contact-link email-link">Email <span>↗</span></a></div><small class="edit-note">LinkedIn and GitHub profile links can be connected before publishing.</small></div>
+      <div class="contact-inner page-grid">
+        <div class="section-aside reveal"><span class="section-number">05 / CONTACT</span><p>Open to conversations about collaboration and meaningful projects.</p></div>
+        <div class="contact-main reveal"><p class="eyebrow"><span class="eyebrow-line"></span> HAVE A PROJECT IN MIND?</p><h2>Let’s make<br><em>something useful.</em></h2><a class="contact-email" href="mailto:emanmohamedmosad21@gmail.com">emanmohamedmosad21@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-socials"><a href="https://www.linkedin.com/in/eman-matboly321a60343" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/abdelrhman-elmsawy/eman" target="_blank" rel="noopener noreferrer">Portfolio repository ↗</a><a href="Eman_Mohamed_Mosad_CV.pdf" target="_blank" rel="noopener noreferrer">CV PDF ↗</a></div></div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">E</span><span>eman<span class="brand-dot">.</span></span></a><span>Designed with purpose · © <span id="year"></span> Eman Mohamed</span><a href="#home" class="back-top">Back to top ↑</a></footer>
-  <script src="script.js"></script>
+
+  <footer class="site-footer"><a class="wordmark" href="#home">eman<span>.</span></a><span>Designed with intention · © <span id="year"></span> Eman Mohamed Mosad</span><a href="#home" class="back-top">Back to top ↑</a></footer>
 </body>
 </html>
