@@ -31,3 +31,13 @@ Check the contact details and replace placeholder social links with the correct 
 ### Logo styling
 - Added a technology-logo strip for C#, .NET, HTML5, CSS3, JavaScript, Python, MySQL, Git, GitHub, VS Code, Arduino, and Canva. The logo images load from Simple Icons CDN, so an internet connection is needed to display those marks.
 - Added coordinated visual identity badges for Mansoura University and DEPI/MCIT in the Education section. These are portfolio-style badges, not official institutional logo files.
+
+
+## Improvements (October 2026)
+- Aligned the portfolio positioning with the CV's engineering background and current Full Stack .NET training.
+- Added leadership/activities and language details that are present in the CV.
+- Removed the empty testimonials section until genuine feedback is available.
+- Improved mobile navigation behavior, keyboard escape handling, accessible focus states, and reduced-motion support.
+- Added search/social metadata and image loading hints.
+- Kept the site dependency-free with plain HTML, CSS, and JavaScript.
+- Linked the verified LinkedIn profile. GitHub destination should be replaced with Eman's personal profile URL if it differs from the repository owner URL.
